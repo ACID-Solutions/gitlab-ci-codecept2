@@ -1,1 +1,1 @@
-# Gitlab CI Image for Codeception 2
+# Gitlab CI Image for PHP 5.6 with Codeception 2
