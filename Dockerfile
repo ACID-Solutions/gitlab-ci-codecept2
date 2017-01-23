@@ -52,7 +52,7 @@ RUN yes | pecl install xdebug \
 RUN curl -sS https://getcomposer.org/installer | php
 
 # Install phpdox
-RUN wget https://github.com/theseer/phpdox/releases/download/0.0.9/phpdox-0.9.0.phar \
+RUN wget https://github.com/theseer/phpdox/releases/download/0.9.0/phpdox-0.9.0.phar \
 && chmod +x phpdox-0.9.0.phar \
 && mv phpdox-0.9.0.phar /usr/bin/phpdox
 
