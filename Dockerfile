@@ -50,3 +50,23 @@ RUN yes | pecl install xdebug \
 
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php
+
+# Install phpdox
+RUN wget https://github.com/theseer/phpdox/releases/download/0.0.9/phpdox-0.9.0.phar \
+&& chmod +x phpdox-0.9.0.phar \
+&& mv phpdox-0.9.0.phar /usr/bin/phpdox
+
+# Install phploc
+RUN wget https://phar.phpunit.de/phploc.phar \
+&& chmod +x phploc.phar \
+&& mv phploc.phar /usr/bin/phploc
+
+# Install pdepend
+RUN wget http://static.pdepend.org/php/latest/pdepend.phar \
+&& chmod +x pdepend.phar \
+&& mv pdepend.phar /usr/bin/pdepend
+
+# Install phpmd
+RUN wget -c http://static.phpmd.org/php/latest/phpmd.phar \
+&& chmod +x phpmd.phar \
+&& mv phpmd.phar /usr/bin/phpmd
